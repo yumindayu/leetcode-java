@@ -13,7 +13,7 @@ class Solution {
         colCnts = new HashMap<>();
         lrCnts = new HashMap<>();
         rlCnts = new HashMap<>();
-        //定义被点亮的坐标，因为有重复的所以需要去重，用set来实现，坐标要经过2维转1维 公司 x 坐标 乘以N 加 y坐标
+        //定义被点亮的坐标，因为有重复的所以需要去重，用set来实现，坐标要经过2维转1维 公式： x 坐标 乘以N 加 y坐标
         Set<Long> points = new HashSet<>();
         //循环点亮的坐标，记录在points中，并照亮八个方向的点
         for(int[] lamp: lamps) {
